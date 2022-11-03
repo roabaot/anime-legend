@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'dubai';
+	src: url('~assets/styles/font/DubaiW23-Medium.ttf');
+}
+@font-face {
+    font-family: 'Pacifico';
+    src: local('Pacifico'), url(~assets/styles/font/Pacifico-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: local('Lobster'), url(~assets/styles/font/Lobster-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: local('Oxygen'), url(~assets/styles/font/oxygen/Oxygen-Regular.ttf) format('truetype');
+}
+
+html {
+    font-family: 'Oxygen';
+    /* overflow-y: hidden !important; */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #111318;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #343b4b;
+}
