@@ -13,8 +13,9 @@
 
         <v-btn
             slot="actions"
-            text
-            class="primary title"
+            outlined
+            color="primary"
+            class="title"
             to="@"
           >
             <div v-if="$vuetify.breakpoint.mdAndUp">
