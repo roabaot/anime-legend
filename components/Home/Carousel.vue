@@ -21,43 +21,15 @@ export default {
       slides: [
         {
           id: 1,
-          img: 'img/Home/Slides/1.jpg'
+          img: 'https://i.postimg.cc/bv2LDDP3/17350.jpg'
         },
         {
           id: 2,
-          img: 'img/Home/Slides/2.jpg'
+          img: 'https://i.postimg.cc/GmYtNdxH/Cool-Anime-Laptop-Wallpaper-4k.jpg'
         },
         {
           id: 3,
-          img: 'img/Home/Slides/3.jpg'
-        },
-        {
-          id: 4,
-          img: 'img/Home/Slides/4.webp'
-        },
-        {
-          id: 5,
-          img: 'img/Home/Slides/5.jpg'
-        },
-        {
-          id: 6,
-          img: 'img/Home/Slides/6.jpeg'
-        },
-        {
-          id: 7,
-          img: 'img/Home/Slides/7.jpg'
-        },
-        {
-          id: 8,
-          img: 'img/Home/Slides/8.jpg'
-        },
-        {
-          id: 9,
-          img: 'img/Home/Slides/9.png'
-        },
-        {
-          id: 10,
-          img: 'img/Home/Slides/10.jpg'
+          img: 'https://i.postimg.cc/tJ3yk4jj/demonslayer.jpg'
         }
       ]
     }

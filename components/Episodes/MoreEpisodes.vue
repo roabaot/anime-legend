@@ -61,6 +61,7 @@
 export default {
   data () {
     return {
+      selected: null,
       anime: {
         id: 1,
         img: '/img/Home/Slides/1.jpg',

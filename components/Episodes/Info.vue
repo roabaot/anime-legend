@@ -36,14 +36,14 @@
 
 <script>
 export default {
+  props: {
+    info: {
+      type: Object,
+      default: null
+    }
+  },
   data () {
     return {
-      info: {
-        id: 1,
-        img: '/img/Home/Slides/1.jpg',
-        name: 'anime 1',
-        episode: 1
-      },
       tags: [
         { id: 1, tag: 'اكشن' },
         { id: 2, tag: 'مغامرات' },

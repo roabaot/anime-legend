@@ -14,10 +14,12 @@
           height="200"
           width="130"
           class="ma-4"
+          @click="onDecs(slide)"
         >
           <v-img
             :src="slide.img"
-            class="align-end"
+            :lazy-src="slide.img"
+            class="align-end subbackground"
             height="200"
             width="130"
             :gradient="hover ? 'to bottom, rgba(0,0,0,.2), rgba(0,0,0,.6)' : ''"
@@ -28,7 +30,7 @@
               justify="center"
             >
               <v-scale-transition>
-                <v-card-title v-if="hover" class="white--text" style="text-shadow: 2px 2px 0.2px black;">
+                <v-card-title v-if="hover" class="white--text text-center" style="text-shadow: 2px 2px 0.2px black; word-break: break-word;">
                   {{ slide.name }}
                 </v-card-title>
               </v-scale-transition>
@@ -48,70 +50,64 @@ export default {
       slides: [
         {
           id: 1,
-          img: 'img/Home/Slides/1.jpg',
-          name: 'anime 1'
+          img: 'https://i.postimg.cc/1XxJ5d3j/1.jpg',
+          name: 'Hunter X Hunter'
         },
         {
           id: 2,
-          img: 'img/Home/Slides/2.jpg',
-          name: 'anime 2'
+          img: 'https://i.postimg.cc/sgVQjtRg/2.jpg',
+          name: 'Haikyu!!'
         },
         {
           id: 3,
-          img: 'img/Home/Slides/3.jpg',
-          name: 'anime 3'
+          img: 'https://i.postimg.cc/9Q0nGLcm/3.jpg',
+          name: 'Tokyo Ghoul'
         },
         {
           id: 4,
-          img: 'img/Home/Slides/4.webp',
-          name: 'anime 4'
+          img: 'https://i.postimg.cc/7PdghXf8/4.webp',
+          name: 'Boku no Hero'
         },
         {
           id: 5,
-          img: 'img/Home/Slides/5.jpg',
-          name: 'anime 5'
+          img: 'https://i.postimg.cc/BbRjBZKJ/5.jpg',
+          name: 'Sword Of the Stranger'
         },
         {
           id: 6,
-          img: 'img/Home/Slides/6.jpeg',
-          name: 'anime 6'
+          img: 'https://i.postimg.cc/KYDVwCNp/6.jpg',
+          name: 'Call of the Night'
         },
         {
           id: 7,
-          img: 'img/Home/Slides/7.jpg',
-          name: 'anime 7'
+          img: 'https://i.postimg.cc/QtrxkDLD/7.jpg',
+          name: 'Death Note'
         },
         {
           id: 8,
-          img: 'img/Home/Slides/8.jpg',
-          name: 'anime 8'
+          img: 'https://i.postimg.cc/V6xCG6dP/8.jpg',
+          name: 'Mashle'
         },
         {
           id: 9,
-          img: 'img/Home/Slides/9.png',
-          name: 'anime 9'
+          img: 'https://i.postimg.cc/448tnzpy/9.png',
+          name: 'Demon Slyer'
         },
         {
           id: 10,
-          img: 'img/Home/Slides/10.jpg',
-          name: 'anime 10'
+          img: 'https://i.postimg.cc/y8CNNdpW/10.jpg',
+          name: 'Ai Tokyo'
         }
       ]
+    }
+  },
+  methods: {
+    onDecs (anime) {
+      this.$nuxt.$router.push({ path: `/anime/description/${anime.id}`, query: { name: anime.name } })
     }
   }
 }
 </script>
 
 <style lang="scss">
-// .v-slide-group__wrapper {
-//   overflow-x: auto;
-//   -ms-overflow-style: none;
-//   scrollbar-width: none;
-// }
-
-// .v-slide-group__wrapper::-webkit-scrollbar {
-//   display: none;
-//   width: 0;
-//   background: transparent;
-// }
 </style>

@@ -121,58 +121,14 @@
 
 <script>
 export default {
+  props: {
+    anime: {
+      type: Object,
+      default: null
+    }
+  },
   data () {
     return {
-      anime: {
-        id: 1,
-        img: '/img/Home/Slides/1.jpg',
-        name: 'HUNTER X HUNTER',
-        description: 'مغامرة فتى يسعى ان يصبح الصياد لملاقاة ابيه, انمي مثير وذات احداث شيقة',
-        info: {
-          type: 'TV',
-          date: '2020',
-          status: 'متوقف',
-          numOfEpisodes: 'غير معروف',
-          season: 'الخريف'
-        },
-        episodes: [
-          {
-            id: 1,
-            title: 'الحلقة 1',
-            views: '24333'
-          },
-          {
-            id: 2,
-            title: 'الحلقة 2',
-            views: '20853'
-          },
-          {
-            id: 3,
-            title: 'الحلقة 3',
-            views: '22343'
-          },
-          {
-            id: 4,
-            title: 'الحلقة 4',
-            views: '19343'
-          },
-          {
-            id: 5,
-            title: 'الحلقة 5',
-            views: '20423'
-          },
-          {
-            id: 6,
-            title: 'الحلقة 6',
-            views: '27543'
-          },
-          {
-            id: 7,
-            title: 'الحلقة 7',
-            views: '22345'
-          }
-        ]
-      },
       tags: [
         { id: 1, tag: 'اكشن' },
         { id: 2, tag: 'مغامرات' },
