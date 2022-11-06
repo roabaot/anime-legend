@@ -2,23 +2,9 @@
 	font-family: 'dubai';
 	src: url('~assets/styles/font/DubaiW23-Medium.ttf');
 }
-@font-face {
-    font-family: 'Pacifico';
-    src: local('Pacifico'), url(~assets/styles/font/Pacifico-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Lobster';
-    src: local('Lobster'), url(~assets/styles/font/Lobster-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Oxygen';
-    src: local('Oxygen'), url(~assets/styles/font/oxygen/Oxygen-Regular.ttf) format('truetype');
-}
 
 html {
-    font-family: 'Oxygen';
+    font-family: 'dubai';
     /* overflow-y: hidden !important; */
 }
 
