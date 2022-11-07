@@ -14,11 +14,10 @@
         router
         exact
       >
-        <v-list-item-action>
-          <v-icon>{{ item.icon }}</v-icon>
-        </v-list-item-action>
         <v-list-item-content>
-          <v-list-item-title v-text="item.title" />
+          <v-list-item-title>
+            {{ item.title }}
+          </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -47,29 +46,20 @@ export default {
     return {
       items: [
         {
-          icon: 'mdi-home-outline',
-          title: 'Home',
+          title: 'الرئيسية',
           to: '/'
         },
         {
-          icon: 'mdi-rss',
-          title: 'Feed',
+          title: 'قائمة الانمي',
           to: '/'
         },
         {
-          icon: 'mdi-chat-outline',
-          title: 'Chats',
+          title: 'افلام الانمي',
           to: '/chat'
         },
         {
-          icon: 'mdi-account-group-outline',
-          title: 'Group',
+          title: 'انميات الموسم',
           to: '/users'
-        },
-        {
-          icon: 'mdi-cog-outline',
-          title: 'Setting',
-          to: '/setting'
         }
       ]
     }
