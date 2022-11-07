@@ -109,5 +109,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.v-slide-group__wrapper {
+  touch-action: auto !important;
+}
 </style>
